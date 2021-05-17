@@ -1,0 +1,136 @@
+/* *********************************************************************************
+ * 1. Reset
+ * 2. HTML Elements
+ * 3. IDs
+ * 		3.1 Mobile view
+ * 		3.2 Tablet View
+ * 		3.3 Screen View
+ * 4. Classes
+ * 		4.1 Mobile view
+ * 		4.2 Tablet View
+ * 		4.3 Screen View
+ * 5. Fonts & Colours
+ * ****************************************************************************** */
+
+/* **** 1. Reset **** */
+
+@import url("./reset.css");
+
+	
+/* **** 2. HTML Elements **** */
+
+:root {
+    --darkBlue: #394264;
+    --lightBlue: #350597b;
+    --aqua: #0db5b5;
+    
+    }
+
+
+/* Flexible typesettings */
+:root {
+  font-size: 1.8rem;
+  /*fall back size */
+  font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+
+@supports ((-webkit-font-kerning: normal) or (font-kerning: normal)) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+  :root {
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-feature-settings: normal;
+  }
+}
+:root.wf-active {
+  font-size: 1.8rem;
+}
+
+.wf-active body {
+  line-height: 1.7;
+}
+
+body {
+  font-family: "futura PT", "neue-haas-grotesk-display", Helvetica, Tahoma, sans-serif;
+  line-height: 1.5;
+  /*fall back*/
+  letter-spacing: 1px;
+  -webkit-hyphens: inherit;
+          hyphens: inherit;
+}
+
+body {
+	font-family: Helvetica, Tahoma, sans-serif;
+	
+	}
+
+h3, i  {
+	font-size: 1rem;
+	
+	}
+	
+.mainHeader ul {
+    display: flex;
+    
+    }
+    
+.btn, .btn:active, .btn:link {
+    text-decoration: none;
+    background-color: #46548A;
+    padding: 1rem 1.8rem;
+    border-bottom: 10px solid #1F253D;
+    color: white;
+    text-align: center;
+    transition: ease all .3s;
+    
+    }
+    
+.btn:hover, .btn:visited {
+    color: #46548A;
+    background-color: #6D82D6;
+    border-bottom: 10px solid #11A8AB;
+
+    }
+@media screen and (min-width: 1023px) { /* Tablet View */
+	
+	
+	}
+	
+@media screen and (max-width: 300px) { /* Screen View */
+        h3, i {
+            font-size: 0.382rem;
+            
+            }
+            
+        .btn, .btn:active, .btn:link {
+                padding: .5rem 0.6rem;
+            
+            }
+   
+        
+	}
+	
+@media print {
+
+	
+	}
+
+/* **** 3. IDs **** */
+
+/* ******** 3.1 Mobile View ********  */
+
+/* ******** 3.2 Tablet View ********  */
+
+/* ******** 3.3 Screen View ********  */
+
+
+/* **** 4. Classes **** */
+
+/* ******** 4.1 Mobile View ********  */
+
+/* ******** 4.2 Tablet View ********  */
+
+/* ******** 4.3 Screen View ********  */
+
+/* **** 5. Fonts & Colours **** */
